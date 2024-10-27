@@ -114,5 +114,16 @@ button:hover {
     clip-path: inset(0% 0% 0% 0%);
   }
 }
+/* Efecto de ruido en el fondo */
+#noise {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://www.transparenttextures.com/patterns/noise.png'); /* Patrón de ruido */
+  opacity: 0.03;
+  z-index: -1;
+}
 
 
