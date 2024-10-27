@@ -1,27 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #000000; /* Fondo completamente negro */
-  color: #f5f5f5; /* Color claro para el texto */
+  background-color: #0a0a0a;
+  color: #f5f5f5;
   margin: 0;
-  font-family: 'Cinzel', serif; /* Nueva fuente misteriosa */
+  font-family: 'Cinzel', serif;
+  overflow: hidden;
 }
 
 #center-box {
   text-align: center;
-  background-color: #1b1b1b; /* Caja más oscura */
+  background-color: #1a1a1a;
   padding: 30px;
-  border-radius: 15px;
+  border-radius: 10px;
   width: 350px;
-  box-shadow: 0 0 25px rgba(255, 255, 255, 0.1); /* Efecto de brillo suave */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+  position: relative;
+  animation: glitch 1.5s infinite; /* Efecto de glitch */
 }
 
 h1 {
   font-size: 1.8em;
-  color: #c9b037; /* Color dorado oscuro para el título */
+  color: #c9b037;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  animation: glitch-text 2s infinite; /* Texto con glitch */
 }
 
 input[type="text"] {
@@ -56,5 +62,57 @@ button:hover {
   font-size: 1.2em;
   font-style: italic;
   color: #f5f5f5;
+  animation: glitch-text 2.5s infinite; /* Efecto glitch en el contenido */
 }
+
+/* Animación de Glitch */
+@keyframes glitch {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  20% {
+    transform: translate(-2px, -2px);
+  }
+  40% {
+    transform: translate(2px, 2px);
+  }
+  60% {
+    transform: translate(-2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+/* Glitch para texto */
+@keyframes glitch-text {
+  0% {
+    color: #f5f5f5;
+    clip-path: inset(0% 0% 0% 0%);
+  }
+  20% {
+    color: #ff003c;
+    clip-path: inset(10% 0% 50% 0%);
+  }
+  40% {
+    color: #1bbdff;
+    clip-path: inset(30% 0% 20% 0%);
+  }
+  60% {
+    color: #f5f5f5;
+    clip-path: inset(40% 0% 30% 0%);
+  }
+  80% {
+    color: #ff003c;
+    clip-path: inset(10% 0% 50% 0%);
+  }
+  100% {
+    color: #f5f5f5;
+    clip-path: inset(0% 0% 0% 0%);
+  }
+}
+
 
