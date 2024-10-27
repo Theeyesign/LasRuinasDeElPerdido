@@ -1,6 +1,10 @@
-// Al inicio, oculta las secciones de la historia
-document.getElementById("storySections").classList.add("hidden");
+// Al cargar la página, oculta las secciones de historia y la carta
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("storySections").classList.add("hidden");
+    document.getElementById("card").classList.add("hidden");
+});
 
+// Manejar el botón de iniciar
 document.getElementById("startButton").addEventListener("click", function() {
     const input = document.querySelector("input[type='text']");
     const contentDiv = document.getElementById("content");
