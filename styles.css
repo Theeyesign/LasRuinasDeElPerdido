@@ -105,20 +105,6 @@ button:hover {
   }
 }
 
-/* Efecto de Ruinas y Lianas */
-#ruins-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('https://example.com/lianas-overlay.png'); /* URL de una imagen de lianas o ruinas */
-  background-size: cover;
-  opacity: 0.2;
-  pointer-events: none;
-  z-index: -1;
-}
-
 #noise {
   position: fixed;
   top: 0;
@@ -129,5 +115,4 @@ button:hover {
   opacity: 0.03;
   z-index: -2;
 }
-
 
