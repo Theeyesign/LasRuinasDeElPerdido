@@ -119,5 +119,15 @@ button:hover {
     z-index: 10;
 }
 
+/* Estilo para las secciones de historia */
+.story {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 
 
